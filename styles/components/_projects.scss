@@ -1,0 +1,97 @@
+.project-container{
+    padding-bottom: 80px;
+    h1{
+        font-size: 2em;
+        margin: 10vh auto;
+        color: $whiteFillProjects;
+    }
+
+    .flex-content{
+        @media(min-width: 900px){
+            display: inline-flex;
+        }
+    }
+
+    h2{
+        color: $whiteText;
+        position: relative;
+        top: 150px;
+        background-color: $backGround;
+    }
+
+    a{
+        display: none;
+        background-color: $backGround;
+        box-shadow: none;
+        padding: 15px 25px;
+        border:none;
+        margin: 0 auto;
+        color: $navWhite;
+
+    }
+    
+    .p-box{
+        width: 100vw;
+        height: 350px;
+        background: url(../../images/ecommerce-bakery-website-elements.jpg.png);
+        object-fit: contain;
+        margin: 50px auto;
+        background-color: grey;
+        background-blend-mode: multiply;  
+        border: solid 5px $backGround;
+        border-radius: 3px;
+        @media (min-width: 500px){
+            max-width: 400px;
+            border-radius: 3px;
+
+        }
+    } 
+
+    .p-box:hover{
+        a{
+            display: block;
+            @include button-style;
+        }
+        h2{
+            display: none;
+        }
+    }
+
+    .p-one:hover,
+    .p-two:hover{
+        background-color:rgb(158, 155, 154);
+        background-blend-mode:soft-light;
+        transition: 2s;
+        cursor: pointer;
+
+        
+        .project-im-hover, 
+        .project-im-two-hover{
+        display: inline-block;
+
+        }
+
+    }
+    .project-im-hover{
+        margin-top: 60px;
+    }
+    .project-im-hover,
+    .project-im-two-hover{
+        width: 250px;
+        max-height: 250px;
+        overflow-x: hidden;
+        opacity: .95;
+        cursor: pointer;
+    }
+
+    .project-im-two-hover{
+        width: 200px;
+        padding-top: 50px;
+    }
+
+    .project-im-hover,
+    .project-im-two-hover{
+        display: none;
+    }
+  
+}

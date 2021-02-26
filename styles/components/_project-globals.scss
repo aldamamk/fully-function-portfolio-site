@@ -1,0 +1,70 @@
+//project-globals
+.above-fold-content{
+    margin: 0 auto;
+    background-color: $whiteFillProjects;
+    padding-bottom: 30px;
+    h3{
+        padding: 30px 0;
+
+        @media(min-width:400px){
+            font-size: 2em;
+        }
+
+        @media(min-width: 600px){
+            font-size: 2.5em;
+        }
+
+        @media(min-width: 900px){
+            font-size: 3em;
+        }
+    }
+
+    img{
+        max-height: 40vh;
+        object-fit: cover;
+        width: 100%;
+        @media(min-width: 700px){
+            width: 80vw;
+
+        }
+    }
+
+    p{
+        padding: 20px 0;
+        color: $brownText;
+    }
+
+    h4{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    button{
+         margin-top: 20px;
+        a{
+          color: $yellowText  
+        }
+        
+        
+        @media(min-width: 600px){
+            padding: 15px 30px;
+        }
+    }
+}
+
+.project-nav{
+
+    button{
+        box-shadow: none;
+    }
+
+    .panel, .accordion{
+        margin-top: 2px;
+    }
+
+
+    @media(min-width: 550px){
+        margin-top: 30px;
+    }
+}
+

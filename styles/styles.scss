@@ -1,0 +1,46 @@
+//SASS imports
+
+//google Fonts
+//font-family
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@400;500;600;700&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Proza+Libre:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=PT+Sans:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+//mixins
+@import './utilities/mixins';
+
+//Resets
+@import './base/reset';
+
+//Settings
+@import './base/settings';
+
+//globals
+@import './base/typography';
+@import './base/globals';
+//components
+@import './components/about';
+@import './components/animations';
+@import './components/cta';
+@import './components/hero';
+@import './components/nav-main';
+@import './components/projects';
+@import './components/project-globals';
+@import './components/project-capstone';
+@import './components/project-portfolio';
+@import './components/projectnav';
+@import './components/scroll-to-top';
+@import './components/contact';
+@import './components/scroll-down';
+@import './components/footer-nav';
+
+
+
+//globals body,
+
+html{
+    background-color: $backGround;
+    text-align: center;
+    scroll-behavior: smooth;
+    min-width: 320px;
+}

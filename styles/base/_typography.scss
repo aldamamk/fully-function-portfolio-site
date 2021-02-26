@@ -1,0 +1,37 @@
+
+// font-family: 'Lora', serif;
+// font-family: 'PT Sans', sans-serif;
+// font-family: 'Raleway', sans-serif;
+h1,
+h2,
+h3, 
+h4,
+h5{
+    font-weight: bold;
+    color: $yellowText;
+    font-family: 'Lora', sans-serif;
+    font-size: 1.5em;
+    @include brownGradient;
+}
+
+
+h2{
+    font-size: 1.75em;
+    font-family: 'Lora', sans-serif;
+}
+
+a{
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Lora', sans-serif;
+}
+
+p{
+    line-height: 1.5em;
+    font-family:  'Raleway', sans-serif;
+    font-weight: regular;
+    font-size: 1em;
+    color: $whiteText;
+    text-align: left;
+}

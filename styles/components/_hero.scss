@@ -1,0 +1,101 @@
+.hero{
+    min-height: 90vh;
+
+    a{
+      color: $yellowText;
+    }
+
+    .hero-content{
+    text-align: left  ;
+    padding-top: 15vh;
+    margin: 0 5vw;
+
+      .home-button{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+        a{
+          font-size: .75em;
+
+          @media(min-width: 700px){
+            padding: 10px 30px;
+            font-size: 1em;
+          }
+        }
+    
+        @media(min-width:500px){
+          padding-top: 15vh;
+          max-width: 90vw;
+          margin: 0 auto;
+        }
+
+        @media(min-width:700px){
+          text-align: left;
+
+        }
+    }
+
+    h1{
+      font-size: 1.5em;
+      text-align: left;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 1.25em;  
+      @include brownGradient;
+
+        @media(min-width: 400px){
+          font-size: 2em;
+        }
+
+        @media(min-width: 550px){
+          font-size: 2.5em;
+          border-bottom: 2px solid $brownText;
+        }
+
+        @media(min-width: 700px){
+          font-size: 2.75em;
+        }
+
+        @media(min-width: 850px){
+          font-size: 3.5em;
+        }
+    }
+
+    .top{
+      @media(min-width: 550px){
+        border-top: 2px solid $brownText;
+        text-align: left;
+        margin-right:15vw ;
+      }
+    }
+
+    .bottom{
+      @media(min-width: 550px){
+        text-align: right;
+        margin-left:15vw ;
+      }
+    }
+
+    .middle{
+      @media(min-width: 550px){
+        text-align: center;
+        margin-left:5vw ;
+      }
+    }
+}
+
+.bg-circle{
+  background: url(../../images/circle-bg.png);
+  position: absolute;
+  min-height: 80vh;
+  width: 100vw;
+  object-fit: contain;
+  background-attachment: fixed;
+  background-repeat: round;
+  z-index: -1;
+  opacity: .3;
+
+}
+
+    

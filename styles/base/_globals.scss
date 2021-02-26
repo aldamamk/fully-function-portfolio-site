@@ -1,0 +1,21 @@
+@mixin button-style {
+    border: none;
+    padding: 10px 15px;
+    background-color: $backGround;
+    font-weight: bold;
+    border: solid 2px #39101F;
+    border-radius: 3px;
+    box-shadow: $yellowText 2px 2px 0 0;
+    margin-top: 30px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family:  'Raleway', sans-serif;
+  }
+
+  @mixin a-tag-button{
+    color: $yellowText;
+    letter-spacing: 3px;
+  }
+.icon{
+  height: 28px;
+}

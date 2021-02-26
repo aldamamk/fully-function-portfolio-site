@@ -1,0 +1,43 @@
+.cta{
+   height: 650px;
+   background-color: $backGround;
+    
+    h2{
+            font-size: 2.5em;
+            font-weight: 800;
+            color: $navWhite;
+            padding-top: 200px;
+    
+        }
+    .yellow-circle{
+        margin:0 20%;
+        height: 200px;
+        width: 60%;
+        border-radius: 50%;
+        background-color: $yellowText;
+        opacity: 30%;
+
+        @media(min-width:450px){
+            margin: 0 30%;
+            width: 40%;
+        }
+
+        a{
+            opacity: 100%;
+            color: $red;
+            font-size: 1.75em;
+            padding:15% auto;
+
+            @media(min-width:550px){
+                font-size: 2.25em;
+            }
+    
+
+        }
+
+       h3{
+          padding-top: 75px;
+       }
+    }
+   
+}
