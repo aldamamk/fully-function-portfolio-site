@@ -1,17 +1,18 @@
 .about-content{
     min-height: 100vh;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 
     @media(min-width: 600px){
     max-width: 900px;
     margin:50px auto;
     text-align: left;
 
+    }
 
-        button{
-            padding: 15px 40px;
-        }
+    .button-like{
+        @include button-style;
+        @include a-tag-button;
     }
 
     .about-flex{ 
@@ -22,7 +23,6 @@
         .left-grid{
             grid-area: left;
         }
-
         @media(min-width: 600px){
         display: grid;
         grid-template-areas: 'left right';
@@ -52,6 +52,10 @@
             font-size: 1.10em;
         }
         
+    }
+
+    .last-p{
+        margin-bottom: 30px;
     }
 
     .my-im{

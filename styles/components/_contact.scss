@@ -108,6 +108,7 @@
             }
 
             button{
+                @include button-style;
                 color: $red;
                 margin-top: 0;
                 font-size: .9em;

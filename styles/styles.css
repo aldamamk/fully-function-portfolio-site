@@ -116,7 +116,7 @@ p {
 .about-content {
   min-height: 100vh;
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 600px) {
@@ -125,9 +125,23 @@ p {
     margin: 50px auto;
     text-align: left;
   }
-  .about-content button {
-    padding: 15px 40px;
-  }
+}
+
+.about-content .button-like {
+  border: none;
+  padding: 10px 15px;
+  background-color: #12080D;
+  font-weight: bold;
+  border: solid 2px #39101F;
+  border-radius: 3px;
+  -webkit-box-shadow: #AE7C53 2px 2px 0 0;
+          box-shadow: #AE7C53 2px 2px 0 0;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  color: #AE7C53;
+  letter-spacing: 3px;
 }
 
 .about-content .about-flex .right-grid {
@@ -175,6 +189,10 @@ p {
   .about-content p {
     font-size: 1.10em;
   }
+}
+
+.about-content .last-p {
+  margin-bottom: 30px;
 }
 
 .about-content .my-im {
@@ -250,6 +268,12 @@ p {
   color: #AE7C53;
 }
 
+@media (min-width: 700px) {
+  .hero a {
+    font-size: 1.5em;
+  }
+}
+
 .hero .hero-content {
   text-align: left;
   padding-top: 15vh;
@@ -263,17 +287,6 @@ p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 30px;
-}
-
-.hero .hero-content a {
-  font-size: .75em;
-}
-
-@media (min-width: 700px) {
-  .hero .hero-content a {
-    padding: 10px 30px;
-    font-size: 1em;
-  }
 }
 
 @media (min-width: 500px) {
@@ -350,16 +363,16 @@ p {
 }
 
 .bg-circle {
-  background: url(../../images/circle-bg.png);
+  background: url(../../images/shapes.png);
   position: absolute;
   min-height: 80vh;
   width: 100vw;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-attachment: fixed;
   background-repeat: round;
   z-index: -1;
-  opacity: .3;
+  opacity: .2;
 }
 
 @media (min-width: 550px) {
@@ -406,7 +419,7 @@ p {
 
 .main-nav a {
   color: #AE7C53;
-  line-height: 1.5em;
+  padding: 5px;
 }
 
 @media (min-width: 650px) {
@@ -467,15 +480,26 @@ p {
   background-color: #12080D;
 }
 
-.project-container a {
-  display: none;
+.project-container .a-buttonlike {
+  border: none;
+  padding: 10px 15px;
   background-color: #12080D;
+  font-weight: bold;
+  border: solid 2px #39101F;
+  border-radius: 3px;
+  -webkit-box-shadow: #AE7C53 2px 2px 0 0;
+          box-shadow: #AE7C53 2px 2px 0 0;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  display: none;
+  background-color: #39101F;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 15px 25px;
   border: none;
-  margin: 0 auto;
-  color: #988C7D;
+  margin: 0 25%;
+  color: #AE7C53;
 }
 
 .project-container .p-box {
@@ -498,20 +522,8 @@ p {
   }
 }
 
-.project-container .p-box:hover a {
+.project-container .p-box:hover .a-buttonlike {
   display: block;
-  border: none;
-  padding: 10px 15px;
-  background-color: #12080D;
-  font-weight: bold;
-  border: solid 2px #39101F;
-  border-radius: 3px;
-  -webkit-box-shadow: #AE7C53 2px 2px 0 0;
-          box-shadow: #AE7C53 2px 2px 0 0;
-  margin-top: 30px;
-  cursor: pointer;
-  text-transform: capitalize;
-  font-family: 'Raleway', sans-serif;
 }
 
 .project-container .p-box:hover h2 {
@@ -524,7 +536,6 @@ p {
   background-blend-mode: soft-light;
   -webkit-transition: 2s;
   transition: 2s;
-  cursor: pointer;
 }
 
 .project-container .p-one:hover .project-im-hover,
@@ -601,6 +612,7 @@ p {
 .above-fold-content p {
   padding: 20px 0;
   color: #5B330A;
+  margin-bottom: 30px;
 }
 
 .above-fold-content h4 {
@@ -608,16 +620,25 @@ p {
   margin-top: 15px;
 }
 
-.above-fold-content button {
-  margin-top: 20px;
-}
-
-.above-fold-content button a {
+.above-fold-content a {
+  border: none;
+  padding: 10px 15px;
+  background-color: #12080D;
+  font-weight: bold;
+  border: solid 2px #39101F;
+  border-radius: 3px;
+  -webkit-box-shadow: #AE7C53 2px 2px 0 0;
+          box-shadow: #AE7C53 2px 2px 0 0;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
   color: #AE7C53;
+  letter-spacing: 3px;
 }
 
 @media (min-width: 600px) {
-  .above-fold-content button {
+  .above-fold-content a {
     padding: 15px 30px;
   }
 }
@@ -862,6 +883,18 @@ p {
 }
 
 .contact-section form button {
+  border: none;
+  padding: 10px 15px;
+  background-color: #12080D;
+  font-weight: bold;
+  border: solid 2px #39101F;
+  border-radius: 3px;
+  -webkit-box-shadow: #AE7C53 2px 2px 0 0;
+          box-shadow: #AE7C53 2px 2px 0 0;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
   color: #CC0066;
   margin-top: 0;
   font-size: .9em;

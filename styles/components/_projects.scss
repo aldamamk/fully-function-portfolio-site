@@ -19,14 +19,15 @@
         background-color: $backGround;
     }
 
-    a{
+
+    .a-buttonlike{
+        @include button-style;
         display: none;
-        background-color: $backGround;
+        background-color: $footer-red;
         box-shadow: none;
-        padding: 15px 25px;
         border:none;
-        margin: 0 auto;
-        color: $navWhite;
+        margin: 0 25%;
+        color: $yellowText;
 
     }
     
@@ -48,9 +49,8 @@
     } 
 
     .p-box:hover{
-        a{
+        .a-buttonlike{
             display: block;
-            @include button-style;
         }
         h2{
             display: none;
@@ -62,7 +62,6 @@
         background-color:rgb(158, 155, 154);
         background-blend-mode:soft-light;
         transition: 2s;
-        cursor: pointer;
 
         
         .project-im-hover, 

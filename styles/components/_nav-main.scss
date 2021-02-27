@@ -34,7 +34,7 @@
 
     a{
         color: $yellowText;
-        line-height: 1.5em;
+        padding: 5px;
 
         @media(min-width:650px) {
             font-size: 1.25em;  
