@@ -2,8 +2,6 @@ html{
     min-width: 320px;
 }
 
-// Functions
-
 // Function to
 // Convert Px to Ems
 @function em($px, $bc: 16){
@@ -15,8 +13,6 @@ html{
 @function rem($px, $bc: 16){
     @return #{$px/$bc}rem; 
 }
-
-
 
 textarea {
     resize: none;

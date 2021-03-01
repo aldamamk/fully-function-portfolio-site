@@ -130,7 +130,7 @@ p {
 .about-content .button-like {
   border: none;
   padding: 10px 15px;
-  background-color: #12080D;
+  background-color: #200E3F;
   font-weight: bold;
   border: solid 2px #39101F;
   border-radius: 3px;
@@ -217,7 +217,7 @@ p {
 
 .cta {
   height: 650px;
-  background-color: #12080D;
+  background-color: #200E3F;
 }
 
 .cta h2 {
@@ -392,7 +392,7 @@ p {
   bottom: 0;
   width: 100%;
   padding: 15px 0;
-  background-color: #12080D;
+  background-color: #200E3F;
   z-index: 6;
 }
 
@@ -477,13 +477,13 @@ p {
   color: #F8F7F3;
   position: relative;
   top: 150px;
-  background-color: #12080D;
+  background-color: #200E3F;
 }
 
 .project-container .a-buttonlike {
   border: none;
   padding: 10px 15px;
-  background-color: #12080D;
+  background-color: #200E3F;
   font-weight: bold;
   border: solid 2px #39101F;
   border-radius: 3px;
@@ -511,7 +511,7 @@ p {
   margin: 50px auto;
   background-color: grey;
   background-blend-mode: multiply;
-  border: solid 5px #12080D;
+  border: solid 5px #200E3F;
   border-radius: 3px;
 }
 
@@ -568,10 +568,17 @@ p {
   display: none;
 }
 
-.above-fold-content {
+.projects-section {
+  max-width: 1500px;
   margin: 0 auto;
-  background-color: #F3EEE8;
-  padding-bottom: 30px;
+}
+
+.above-fold-content {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #200E3F;
+  padding-bottom: 80px;
+  min-height: 80vh;
 }
 
 .above-fold-content h3 {
@@ -605,13 +612,13 @@ p {
 
 @media (min-width: 700px) {
   .above-fold-content img {
-    width: 80vw;
+    max-width: 1500px;
   }
 }
 
 .above-fold-content p {
   padding: 20px 0;
-  color: #5B330A;
+  color: #F3EEE8;
   margin-bottom: 30px;
 }
 
@@ -623,7 +630,7 @@ p {
 .above-fold-content a {
   border: none;
   padding: 10px 15px;
-  background-color: #12080D;
+  background-color: #200E3F;
   font-weight: bold;
   border: solid 2px #39101F;
   border-radius: 3px;
@@ -643,24 +650,35 @@ p {
   }
 }
 
-.project-nav button {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.project-nav {
+  max-width: 90%;
+  max-width: 1500;
+  margin: 0 auto;
+  background-color: #F3EEE8;
 }
 
-.project-nav .panel, .project-nav .accordion {
+.project-nav h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.project-nav img {
+  max-width: 300px;
+}
+
+.project-nav button {
+  margin-bottom: 2px;
   margin-top: 2px;
 }
 
-@media (min-width: 550px) {
-  .project-nav {
-    margin-top: 30px;
-  }
+.project-nav .panel p, .project-nav .accordion p {
+  color: #5B330A;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #12080D;
+  background-color: #27114E;
   color: #AE7C53;
   font-weight: 500;
   font-family: 'Lora', sans-serif;
@@ -674,25 +692,10 @@ p {
   margin: 0;
 }
 
-@media (min-width: 550px) {
-  .accordion {
-    width: 150px;
-    height: 50px;
-    display: block;
-  }
-}
-
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #988C7D;
   color: #5B330A;
-}
-
-@media (min-width: 550px) {
-  .active, .accordion:hover {
-    width: 150px;
-    height: 50px;
-  }
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -700,22 +703,8 @@ p {
   -webkit-transition: 4s ease-out;
   transition: 4s ease-out;
   padding: 10px 18px 30px;
-  background-color: #988C7D;
-  display: none;
+  background-color: #F3EEE8;
   overflow: hidden;
-}
-
-@media (min-width: 700px) {
-  .panel {
-    position: relative;
-    left: 150px;
-    top: -52px;
-    width: calc(100vw - 170px);
-    height: 300px;
-    overflow-y: scroll;
-    border-radius: 3px;
-    padding-top: 50px;
-  }
 }
 
 .contact-section {
@@ -738,12 +727,12 @@ p {
   }
 }
 
-.contact-section img {
+.contact-section iframe {
   width: 80vw;
 }
 
 @media (min-width: 900px) {
-  .contact-section img {
+  .contact-section iframe {
     width: 40vw;
     height: 65vh;
     -o-object-fit: cover;
@@ -885,7 +874,7 @@ p {
 .contact-section form button {
   border: none;
   padding: 10px 15px;
-  background-color: #12080D;
+  background-color: #200E3F;
   font-weight: bold;
   border: solid 2px #39101F;
   border-radius: 3px;
@@ -1056,7 +1045,7 @@ p {
 }
 
 html {
-  background-color: #12080D;
+  background-color: #200E3F;
   text-align: center;
   scroll-behavior: smooth;
   min-width: 320px;
