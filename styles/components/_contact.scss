@@ -9,119 +9,112 @@
         color: $red;
     }
 
+    //desktop version flex
+    .contact-flex{
+        @media(min-width:900px){
+        display: flex;
+        flex-direction: row-reverse;
+        }
+    }
+
+    iframe{
+        width: 80vw;
+        height: 40vh;
         //desktop version flex
-        .contact-flex{
-            @media(min-width:900px){
-            display: flex;
-            flex-direction: row-reverse;
-            }
+        @media(min-width:900px){
+            width: 40vw;
+            height: 65vh;
+            object-fit: cover;
+            padding-left: 20px;
         }
+    }
 
-        iframe{
-            width: 80vw;
-            //desktop version flex
-            @media(min-width:900px){
-                width: 40vw;
-                height: 65vh;
-                object-fit: cover;
-                padding-left: 20px;
-            }
-        }
+    a{
+        line-height: 2em;
+    }
 
-        a{
-            line-height: 2em;
-        }
+    p{
+        padding-bottom: 20px;  
 
-        p{
-            padding-bottom: 20px;
-      
-            
             @media(min-width: 850px){
                 max-width: 800px;
                 margin: 0 auto;
                 margin-bottom: 50px;
             }
-        }
-        h3{
-            margin-top: 20px;
-        }
-        h2{
-            font-size: 2em;
-            font-family: 'Lora', serif;
-            padding: .5em 0;
+    }
 
-            @media(min-width:500){
-                font-size: 2.5em;
-            }
-
-            @media(min-width:700px){
-                font-size: 3em;
-            }
-        }
-
-        //form 
-        .form-heading{
-            text-align: left;
-            padding-bottom: 10px;
+    h2{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
             @media(min-width:900px){
-                width: 40vw;
-                }
-        }
-        form{
-           text-align: left;
-           @media(min-width:900px){
-            }
-           
-            ::placeholder{
-                color: $whiteText;
-                font-family:'Raleway', sans-serif;   
-                font-size: 1.15em;  
-                opacity: 75%;
-
-            }
-            input, textarea{
-                width: 80vw;
-                border-radius: 2px;
-                border: .5px solid #999999; 
-                opacity:70%;
-                margin-bottom: 5px;
-                background-color: $form;
-                color: white;
-                font-family:'Raleway', sans-serif;
-
-                @media(min-width:900px){
-                width: 40vw;
-                }
-            }
-
-            input:focus::placeholder,
-            textarea:focus::placeholder {
-                color: transparent;
-            }
-            input{
-                height: 40px;
-                @media(min-width:900px){
-                    height: 50px;
-                }
-
-            }
-
-            textarea:focus, input:focus{
-                outline:none;
-                background-color: $whiteFillProjects;
-                color: black;
-            }
-
-            button{
-                @include button-style;
-                color: $red;
                 margin-top: 0;
-                font-size: .9em;
-                letter-spacing: 3px;
-                color: $yellowText;
-                
-              
+            }
+    }
+
+    //form 
+    .form-heading{
+        text-align: left;
+
+        @media(min-width:900px){
+            width: 40vw;
+        }
+    }
+    form{
+        text-align: left;
+        @media(min-width:900px){
+        }
+        
+        ::placeholder{
+            color: $whiteText;
+            font-family:'Raleway', sans-serif;   
+            font-size: 1.15em;  
+            opacity: 75%;
+
+        }
+        input, textarea{
+            width: 80vw;
+            border-radius: 2px;
+            border: .5px solid #999999; 
+            opacity:70%;
+            margin-bottom: 5px;
+            background-color: $form;
+            color: white;
+            font-family:'Raleway', sans-serif;
+
+            @media(min-width:900px){
+            width: 40vw;
             }
         }
+
+        input:focus::placeholder,
+        textarea:focus::placeholder {
+            color: transparent;
+        }
+        input{
+            height: 40px;
+            @media(min-width:900px){
+                height: 50px;
+            }
+
+        }
+
+        textarea:focus, input:focus{
+            outline:none;
+            background-color: $whiteFillProjects;
+            color: black;
+        }
+
+        button{
+            @include button-style;
+            color: $red;
+            margin-top: 0;
+            font-size: .9em;
+            letter-spacing: 3px;
+            color: $yellowText;
+            
+            
+        }
+    }
     
 }

@@ -1,5 +1,5 @@
 .header-content{
-    @media(min-width:550px){
+    @media(min-width:565px){
         display: flex;
         justify-content: space-between;
     }
@@ -16,12 +16,12 @@
     z-index: 6;
     // transition: 1s;
 
-    @media(min-width: 550px){
+    @media(min-width: 565px){
         top:0px;
         right: 0px;
         width: 450px;
         height: 65.3px;
-        border-radius: 20%;
+        border-radius: 3px;
         padding: 20px 0;
         position: absolute;   
         margin-top: 15px;

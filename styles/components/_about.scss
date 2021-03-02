@@ -9,19 +9,17 @@
     text-align: left;
 
     }
+
     .linkedin{
         color: $red;
     }
+
     strong{
         font-weight: bold;
     }
 
-    .button-like{
-        @include button-style;
-        @include a-tag-button;
-    }
-
     .about-flex{ 
+
         .right-grid{
         grid-area: right;
         }
@@ -29,27 +27,14 @@
         .left-grid{
             grid-area: left;
         }
+
         @media(min-width: 600px){
         display: grid;
         grid-template-areas: 'left right';
         grid-gap: 10px;
         }
     }
-    h2{
-        font-size: 2em;
-        padding: 5px 0;
-        margin-bottom: 20px;
 
-        @media(min-width: 600px){      
-            font-size: 2.5em;
-            text-align: left;
-        }
-
-        @media(min-width: 600px){      
-            font-size: 3em;
-        }
-       
-    }
     p{
         color: $whiteFillProjects;
         padding: 5px 0;
@@ -58,6 +43,10 @@
             font-size: 1.10em;
         }
         
+    }
+
+    h1{
+        text-align: left;
     }
 
     .last-p{

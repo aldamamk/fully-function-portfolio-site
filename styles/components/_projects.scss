@@ -1,7 +1,8 @@
 .project-container{
     padding-bottom: 80px;
+
     h1{
-        font-size: 2em;
+        font-size: 2.5em;
         margin: 10vh auto;
         color: $whiteFillProjects;
     }
@@ -14,11 +15,12 @@
 
     h2{
         color: $whiteText;
+        font-size: 2em;
         position: relative;
         top: 136px;
         background-color: $backGround;
+        @include brownGradient;        
     }
-
 
     .a-buttonlike{
         @include button-style;
@@ -28,6 +30,7 @@
         border:none;
         margin: 0 25%;
         color: $yellowText;
+        
 
     }
     
@@ -42,6 +45,7 @@
         border-radius: 3px;
         border-top: $yellowText 2px solid;
         border-bottom: $yellowText 2px solid;
+
         @media (min-width: 500px){
             max-width: 400px;
             border-radius: 3px;
@@ -52,6 +56,8 @@
     .p-box:hover{
         .a-buttonlike{
             display: block;
+            letter-spacing: 3px;
+
         }
         h2{
             display: none;
@@ -64,17 +70,16 @@
         background-blend-mode:soft-light;
         transition: 1s;
 
-        
         .project-im-hover, 
         .project-im-two-hover{
         display: inline-block;
-
         }
-
     }
+
     .project-im-hover{
         margin-top: 40px;
     }
+
     .project-im-hover,
     .project-im-two-hover{
         width: 250px;
