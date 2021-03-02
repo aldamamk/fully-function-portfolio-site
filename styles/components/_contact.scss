@@ -27,14 +27,12 @@
             object-fit: cover;
             margin-left: 20px;
         }
-
-        button{
-            font-size: 1em;
-        }
     }
 
-    a{
+    .link-to {
         line-height: 2em;
+        color: #56a1b4;
+        font-weight: bold;
     }
 
     p{
@@ -111,7 +109,7 @@
         }
 
         button{
-            color: #638E99;
+            color: #56a1b4;
             padding: 5px 15px;
             margin-top: 10px;
             font-size: 1em;
@@ -119,7 +117,8 @@
             font-weight: bold;
             letter-spacing: 2px;
             background-color: #F1F1F1;
-            
+            border:2px solid #DDD9D7;
+            border-radius: 2px;
         }
     }
     

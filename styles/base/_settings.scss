@@ -2,18 +2,12 @@ html{
     min-width: 320px;
 }
 
-// Function to
-// Convert Px to Ems
-@function em($px, $bc: 16){
-    @return #{$px/$bc}em; 
-}
-
-// Function to
-// Convert Px to Rems
-@function rem($px, $bc: 16){
-    @return #{$px/$bc}rem; 
-}
-
 textarea {
     resize: none;
 }
+
+* {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }

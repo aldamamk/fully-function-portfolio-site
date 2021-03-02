@@ -73,6 +73,13 @@ textarea {
   resize: none;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
 h1,
 h2,
 h3,
@@ -385,6 +392,7 @@ a {
   background-attachment: fixed;
   background-repeat: round;
   opacity: .4;
+  z-index: -1;
 }
 
 @media (min-width: 565px) {
@@ -960,12 +968,10 @@ a {
   }
 }
 
-.contact-section #map button {
-  font-size: 1em;
-}
-
-.contact-section a {
+.contact-section .link-to {
   line-height: 2em;
+  color: #56a1b4;
+  font-weight: bold;
 }
 
 .contact-section p {
@@ -1088,7 +1094,7 @@ a {
 }
 
 .contact-section form button {
-  color: #638E99;
+  color: #56a1b4;
   padding: 5px 15px;
   margin-top: 10px;
   font-size: 1em;
@@ -1096,6 +1102,8 @@ a {
   font-weight: bold;
   letter-spacing: 2px;
   background-color: #F1F1F1;
+  border: 2px solid #DDD9D7;
+  border-radius: 2px;
 }
 
 .scroll-down {
