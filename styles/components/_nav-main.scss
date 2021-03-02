@@ -1,5 +1,4 @@
 .header-content{
-
     @media(min-width:550px){
         display: flex;
         justify-content: space-between;
@@ -13,7 +12,7 @@
     bottom: 0;
     width: 100%;
     padding: 15px 0;
-    background-color: $backGround;
+    background-color: $blue2;
     z-index: 6;
     // transition: 1s;
 
@@ -22,9 +21,12 @@
         right: 0px;
         width: 450px;
         height: 65.3px;
-        border-radius: 3px;
+        border-radius: 20%;
         padding: 20px 0;
         position: absolute;   
+        margin-top: 15px;
+        margin-right: 10px;
+
     }
 
     ul{

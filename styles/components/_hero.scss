@@ -1,5 +1,5 @@
 .hero{
-    min-height: 90vh;
+    min-height: 80vh;
 
     a{
       color: $yellowText;
@@ -10,27 +10,27 @@
       }
     }
 
+    .home-button{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
     .hero-content{
     text-align: left  ;
     padding-top: 15vh;
     margin: 0 5vw;
-
-      .home-button{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 30px;
-      }
     
-        @media(min-width:500px){
-          padding-top: 15vh;
-          max-width: 90vw;
-          margin: 0 auto;
-        }
+      @media(min-width:500px){
+        padding-top: 15vh;
+        max-width: 90vw;
+        margin: 0 auto;
+      }
 
-        @media(min-width:700px){
-          text-align: left;
+      @media(min-width:700px){
+        text-align: left;
 
-        }
+      }
     }
 
     h1{
@@ -84,14 +84,14 @@
 
 .bg-circle{
   background: url(../../images/shapes.png);
+  background-color:#30175D;
   position: absolute;
   min-height: 80vh;
   width: 100vw;
   object-fit: cover;
   background-attachment: fixed;
   background-repeat: round;
-  z-index: -1;
-  opacity: .2;
+  opacity: .4;
 
 }
 

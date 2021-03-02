@@ -9,6 +9,12 @@
     text-align: left;
 
     }
+    .linkedin{
+        color: $red;
+    }
+    strong{
+        font-weight: bold;
+    }
 
     .button-like{
         @include button-style;
@@ -45,7 +51,7 @@
        
     }
     p{
-        color: $navWhite;
+        color: $whiteFillProjects;
         padding: 5px 0;
 
         @media(min-width: 700px){      
