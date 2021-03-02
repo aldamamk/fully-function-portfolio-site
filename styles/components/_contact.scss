@@ -17,15 +17,19 @@
         }
     }
 
-    iframe{
+    #map{
         width: 80vw;
         height: 40vh;
         //desktop version flex
         @media(min-width:900px){
             width: 40vw;
-            height: 65vh;
+            height: 75vh;
             object-fit: cover;
-            padding-left: 20px;
+            margin-left: 20px;
+        }
+
+        button{
+            font-size: 1em;
         }
     }
 
@@ -55,6 +59,7 @@
     //form 
     .form-heading{
         text-align: left;
+        color: #56a1b4;
 
         @media(min-width:900px){
             width: 40vw;
@@ -75,7 +80,7 @@
         input, textarea{
             width: 80vw;
             border-radius: 2px;
-            border: .5px solid #999999; 
+            border: .5px solid #F1F1F1; 
             opacity:70%;
             margin-bottom: 5px;
             background-color: $form;
@@ -101,18 +106,19 @@
 
         textarea:focus, input:focus{
             outline:none;
-            background-color: $whiteFillProjects;
+            background-color: #F1F1F1;
             color: black;
         }
 
         button{
-            @include button-style;
-            color: $red;
-            margin-top: 0;
-            font-size: .9em;
+            color: #638E99;
+            padding: 5px 15px;
+            margin-top: 10px;
+            font-size: 1em;
             letter-spacing: 3px;
-            color: $yellowText;
-            
+            font-weight: bold;
+            letter-spacing: 2px;
+            background-color: #F1F1F1;
             
         }
     }

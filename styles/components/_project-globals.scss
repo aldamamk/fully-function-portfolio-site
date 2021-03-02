@@ -8,6 +8,10 @@
         border-top: 2px solid $brownText;
         margin-bottom: 30px;
     }
+
+    .panel{
+        background-color: #fff;
+    }
 }
 
 .above-fold-content{
@@ -34,7 +38,7 @@
     }
 
     img{
-        max-height: 40vh;
+        max-height: 50vh;
         object-fit: cover;
         width: 100%;
         @media(min-width: 700px){

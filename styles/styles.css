@@ -229,7 +229,7 @@ a {
 
 .cta {
   height: 650px;
-  background-color: #200E3F;
+  background-color: #050538;
 }
 
 .cta h2 {
@@ -419,6 +419,7 @@ a {
     position: absolute;
     margin-top: 15px;
     margin-right: 10px;
+    background-color: #050538;
   }
 }
 
@@ -492,7 +493,7 @@ a {
   font-size: 2em;
   position: relative;
   top: 136px;
-  background-color: #200E3F;
+  background-color: #050538;
   color: #AE7C53;
   background: -webkit-linear-gradient(#F3EEE8, #AE7C53, #AE7C53);
   -webkit-background-clip: text;
@@ -502,7 +503,7 @@ a {
 .project-container .a-buttonlike {
   border: none;
   padding: 10px 15px;
-  background-color: #200E3F;
+  background-color: #050538;
   font-weight: bold;
   border: solid 1px #988C7D;
   border-radius: 3px;
@@ -524,12 +525,12 @@ a {
 .project-container .p-box {
   width: 100vw;
   height: 300px;
-  background-color: #30175D;
+  background-color: #050504;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 50px auto;
   background-blend-mode: multiply;
-  border: solid 5px #200E3F;
+  border: solid 5px #050538;
   border-radius: 3px;
   border-top: #AE7C53 2px solid;
   border-bottom: #AE7C53 2px solid;
@@ -545,6 +546,7 @@ a {
 .project-container .p-box:hover .a-buttonlike {
   display: block;
   letter-spacing: 3px;
+  background-color: #39101F;
 }
 
 .project-container .p-box:hover h2 {
@@ -600,10 +602,14 @@ a {
   margin-bottom: 30px;
 }
 
+.projects-section .panel {
+  background-color: #fff;
+}
+
 .above-fold-content {
   max-width: 90%;
   margin: 0 auto;
-  background-color: #200E3F;
+  background-color: #050538;
   min-height: 80vh;
   margin-top: 50px;
 }
@@ -631,7 +637,7 @@ a {
 }
 
 .above-fold-content img {
-  max-height: 40vh;
+  max-height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -663,7 +669,7 @@ a {
 .above-fold-content a {
   border: none;
   padding: 10px 15px;
-  background-color: #200E3F;
+  background-color: #050538;
   font-weight: bold;
   border: solid 1px #988C7D;
   border-radius: 3px;
@@ -708,34 +714,165 @@ a {
   line-height: 1.5em;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #27114E;
-  color: #AE7C53;
-  font-weight: 500;
-  font-family: 'Lora', sans-serif;
-  font-size: 1.25em;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  margin: 0;
+@media (min-width: 800px) {
+  .capstone-project .panel {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2px;
+        grid-template-areas: ' content-planning content-planning content-planning content-planning'  ' site-map site-map site-map info-architecture ' ' wireframes wireframes wireframes  info-architecture' ' wireframes wireframes wireframes design' ' mockup mockup mockup . ' ' mockup mockup mockup code' ' mockup mockup mockup live-site' ' mockup mockup mockup reflections';
+  }
+  .capstone-project .panel .content-planning {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: content-planning;
+  }
+  .capstone-project .panel .site-map {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: site-map;
+  }
+  .capstone-project .panel .info-architecture {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: info-architecture;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .capstone-project .panel .wireframes {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: wireframes;
+  }
+  .capstone-project .panel .design {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+    grid-area: design;
+  }
+  .capstone-project .panel .code {
+    -ms-grid-row: 6;
+    -ms-grid-column: 4;
+    grid-area: code;
+  }
+  .capstone-project .panel .live-site {
+    -ms-grid-row: 7;
+    -ms-grid-column: 4;
+    grid-area: live-site;
+  }
+  .capstone-project .panel .reflections {
+    -ms-grid-row: 8;
+    -ms-grid-column: 4;
+    grid-area: reflections;
+  }
+  .capstone-project .panel .mockup {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: mockup;
+  }
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #b1c5d4;
-  color: #5B330A;
+.capstone-project .panel article {
+  border: 2px solid #050538;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  -webkit-transition: 4s ease-out;
-  transition: 4s ease-out;
-  background-color: white;
-  overflow: hidden;
+@media (min-width: 800px) {
+  .capstone-project .panel article {
+    border: 3px solid #050538;
+  }
+}
+
+.capstone-project .panel article h3 {
+  margin-bottom: 20px;
+}
+
+.capstone-project .panel article p {
+  color: black;
+}
+
+@media (min-width: 800px) {
+  .portfolio-project .panel {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: ' content-planning content-planning content-planning content-planning'  ' info-architecture info-architecture site-plan site-plan ' ' wireframes wireframes site-plan site-plan' ' wireframes wireframes design design' ' mockup mockup mockup mockup ' ' mockup mockup mockup mockup ' ' code live-site takeaways .';
+  }
+  .portfolio-project .panel .content-planning {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: content-planning;
+  }
+  .portfolio-project .panel .site-plan {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: site-plan;
+  }
+  .portfolio-project .panel .info-architecture {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: info-architecture;
+  }
+  .portfolio-project .panel .wireframes {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: wireframes;
+  }
+  .portfolio-project .panel .design {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: design;
+  }
+  .portfolio-project .panel .code {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: code;
+  }
+  .portfolio-project .panel .live-site {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+    grid-area: live-site;
+  }
+  .portfolio-project .panel .takeaways {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+    grid-area: takeaways;
+  }
+  .portfolio-project .panel .mockup {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: mockup;
+  }
+}
+
+.portfolio-project .panel article {
+  border: 2px solid #050538;
+}
+
+@media (min-width: 800px) {
+  .portfolio-project .panel article {
+    border: 3px solid #AE7C53;
+  }
+}
+
+.portfolio-project .panel article h3 {
+  margin-bottom: 30px;
+}
+
+.portfolio-project .panel article p {
+  color: black;
 }
 
 .project-nav {
@@ -771,7 +908,17 @@ a {
 }
 
 .project-nav article:nth-child(even) {
-  background-color: #b1c5d4;
+  background-color: #49a3c7;
+}
+
+@media (min-width: 800px) {
+  .project-nav article:nth-child(even) {
+    background-color: #fff;
+  }
+}
+
+.content-planning h3 {
+  margin-bottom: 0;
 }
 
 .contact-section {
@@ -798,19 +945,23 @@ a {
   }
 }
 
-.contact-section iframe {
+.contact-section #map {
   width: 80vw;
   height: 40vh;
 }
 
 @media (min-width: 900px) {
-  .contact-section iframe {
+  .contact-section #map {
     width: 40vw;
-    height: 65vh;
+    height: 75vh;
     -o-object-fit: cover;
        object-fit: cover;
-    padding-left: 20px;
+    margin-left: 20px;
   }
+}
+
+.contact-section #map button {
+  font-size: 1em;
 }
 
 .contact-section a {
@@ -842,6 +993,7 @@ a {
 
 .contact-section .form-heading {
   text-align: left;
+  color: #56a1b4;
 }
 
 @media (min-width: 900px) {
@@ -885,7 +1037,7 @@ a {
 .contact-section form input, .contact-section form textarea {
   width: 80vw;
   border-radius: 2px;
-  border: .5px solid #999999;
+  border: .5px solid #F1F1F1;
   opacity: 70%;
   margin-bottom: 5px;
   background-color: #2E2A2C;
@@ -931,28 +1083,19 @@ a {
 
 .contact-section form textarea:focus, .contact-section form input:focus {
   outline: none;
-  background-color: #F3EEE8;
+  background-color: #F1F1F1;
   color: black;
 }
 
 .contact-section form button {
-  border: none;
-  padding: 10px 15px;
-  background-color: #200E3F;
-  font-weight: bold;
-  border: solid 1px #988C7D;
-  border-radius: 3px;
-  -webkit-box-shadow: #AE7C53 2px 2px 0 0;
-          box-shadow: #AE7C53 2px 2px 0 0;
-  margin-top: 30px;
-  cursor: pointer;
-  text-transform: capitalize;
-  font-family: 'Lora', sans-serif;
-  color: #CC0066;
-  margin-top: 0;
-  font-size: .9em;
+  color: #638E99;
+  padding: 5px 15px;
+  margin-top: 10px;
+  font-size: 1em;
   letter-spacing: 3px;
-  color: #AE7C53;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #F1F1F1;
 }
 
 .scroll-down {
@@ -1109,7 +1252,7 @@ a {
 }
 
 html {
-  background-color: #200E3F;
+  background-color: #050538;
   text-align: center;
   scroll-behavior: smooth;
   min-width: 320px;
