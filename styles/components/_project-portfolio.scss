@@ -12,7 +12,8 @@
         ' wireframes wireframes design design'
         ' mockup mockup mockup mockup '
         ' mockup mockup mockup mockup '
-        ' code live-site takeaways .'
+        ' code code-pen code-pen code-pen'
+        'live-site takeaways takeaways takeaways '
         ;   
             .content-planning{
                 grid-area: content-planning;
@@ -48,6 +49,10 @@
 
             .mockup{
                 grid-area: mockup;
+            }
+
+            .code-pen{
+                grid-area: code-pen;
             }
         }
 

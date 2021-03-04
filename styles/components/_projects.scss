@@ -52,7 +52,7 @@
         }
     } 
 
-    .p-box:hover{
+    .p-box:hover, .p-box:active{
         .a-buttonlike{
             display: block;
             letter-spacing: 3px;
@@ -71,7 +71,9 @@
   
 
     .p-one:hover,
-    .p-two:hover{
+    .p-two:hover,
+    .p-one:active,
+    .p-two:active{
         background-color: white;
 
         .project-im-hover, 

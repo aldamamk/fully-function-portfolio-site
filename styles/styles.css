@@ -297,11 +297,12 @@ h1 {
 
 .hero a {
   color: #AE7C53;
+  font-size: 1.25em;
 }
 
 @media (min-width: 700px) {
   .hero a {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
 }
 
@@ -610,13 +611,13 @@ h1 {
   }
 }
 
-.project-container .p-box:hover .a-buttonlike {
+.project-container .p-box:hover .a-buttonlike, .project-container .p-box:active .a-buttonlike {
   display: block;
   letter-spacing: 3px;
   background-color: #39101F;
 }
 
-.project-container .p-box:hover h2 {
+.project-container .p-box:hover h2, .project-container .p-box:active h2 {
   display: none;
 }
 
@@ -626,14 +627,20 @@ h1 {
 }
 
 .project-container .p-one:hover,
-.project-container .p-two:hover {
+.project-container .p-two:hover,
+.project-container .p-one:active,
+.project-container .p-two:active {
   background-color: white;
 }
 
 .project-container .p-one:hover .project-im-hover,
 .project-container .p-one:hover .project-im-two-hover,
 .project-container .p-two:hover .project-im-hover,
-.project-container .p-two:hover .project-im-two-hover {
+.project-container .p-two:hover .project-im-two-hover,
+.project-container .p-one:active .project-im-hover,
+.project-container .p-one:active .project-im-two-hover,
+.project-container .p-two:active .project-im-hover,
+.project-container .p-two:active .project-im-two-hover {
   display: inline-block;
 }
 
@@ -770,6 +777,7 @@ h1 {
 .project-nav h3 {
   margin-bottom: 30px;
   color: black;
+  text-align: center;
 }
 
 .project-nav img {
@@ -794,7 +802,7 @@ h1 {
   .capstone-project .panel {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: ' content-planning content-planning content-planning content-planning'  ' site-map site-map site-map info-architecture ' ' wireframes wireframes wireframes  info-architecture' ' wireframes wireframes wireframes design' ' mockup mockup mockup . ' ' mockup mockup mockup code' ' mockup mockup mockup live-site' ' mockup mockup mockup reflections';
+        grid-template-areas: ' content-planning content-planning content-planning content-planning'  ' site-map site-map site-map info-architecture ' ' wireframes wireframes wireframes  design' ' wireframes wireframes wireframes design' ' mockup mockup mockup . ' ' mockup mockup mockup code' ' mockup mockup mockup live-site' ' mockup mockup mockup reflections';
   }
   .capstone-project .panel .content-planning {
     -ms-grid-row: 1;
@@ -810,7 +818,6 @@ h1 {
   }
   .capstone-project .panel .info-architecture {
     -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
     -ms-grid-column: 4;
     grid-area: info-architecture;
     text-align: left;
@@ -824,7 +831,8 @@ h1 {
     grid-area: wireframes;
   }
   .capstone-project .panel .design {
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
     -ms-grid-column: 4;
     grid-area: design;
   }
@@ -856,7 +864,7 @@ h1 {
   .portfolio-project .panel {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: ' content-planning content-planning content-planning content-planning'  ' info-architecture info-architecture site-plan site-plan ' ' wireframes wireframes site-plan site-plan' ' wireframes wireframes design design' ' mockup mockup mockup mockup ' ' mockup mockup mockup mockup ' ' code live-site takeaways .';
+        grid-template-areas: ' content-planning content-planning content-planning content-planning'  ' info-architecture info-architecture site-plan site-plan ' ' wireframes wireframes site-plan site-plan' ' wireframes wireframes design design' ' mockup mockup mockup mockup ' ' mockup mockup mockup mockup ' ' code code-pen code-pen code-pen' 'live-site takeaways takeaways takeaways ';
   }
   .portfolio-project .panel .content-planning {
     -ms-grid-row: 1;
@@ -896,13 +904,14 @@ h1 {
     grid-area: code;
   }
   .portfolio-project .panel .live-site {
-    -ms-grid-row: 7;
-    -ms-grid-column: 2;
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
     grid-area: live-site;
   }
   .portfolio-project .panel .takeaways {
-    -ms-grid-row: 7;
-    -ms-grid-column: 3;
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
     grid-area: takeaways;
   }
   .portfolio-project .panel .mockup {
@@ -911,6 +920,12 @@ h1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: mockup;
+  }
+  .portfolio-project .panel .code-pen {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: code-pen;
   }
 }
 
