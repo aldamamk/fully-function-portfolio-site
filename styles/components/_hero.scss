@@ -1,13 +1,26 @@
-.hero{
-    min-height: 80vh;
+.home-body{
+  height: 100vh;
+  overflow: hidden;
+}
 
+.hero{
     a{
       color: $yellowText;
+        @media(min-width:700px){
+          font-size: 1.5em;
+        }
+    }
 
-      @media(min-width:700px){
-        font-size: 1.5em;
+    a:hover{
+      color: $whiteFillProjects;
+      text-decoration: underline;
+      transition: 1.5s;
+      line-height: 1.25em;
+    }
 
-      }
+    a:hover::after{
+      text-decoration: underline 2px white;
+     
     }
 
     .home-button{
@@ -82,18 +95,13 @@
     }
 }
 
-.bg-circle{
-  background: url(../../images/shapes.png);
-  background-color:#30175D;
-  position: absolute;
-  min-height: 80vh;
-  width: 100vw;
-  object-fit: cover;
-  background-attachment: fixed;
-  background-repeat: round;
-  opacity: .4;
-  z-index: -1;
+.home-footer{
+  display: none;
 
+  @media(min-width:565px){
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
-
-    

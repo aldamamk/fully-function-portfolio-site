@@ -5,10 +5,6 @@
     text-align: center;
     padding-bottom: 75px;
 
-    .link-to{
-        color: $red;
-    }
-
     //desktop version flex
     .contact-flex{
         @media(min-width:900px){
@@ -119,6 +115,7 @@
             background-color: #F1F1F1;
             border:2px solid #DDD9D7;
             border-radius: 2px;
+            cursor: pointer;
         }
     }
     
