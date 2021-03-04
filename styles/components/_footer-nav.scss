@@ -1,29 +1,27 @@
+footer{
+    padding-top: 30px;
+}
 .footer-content{
     display: none;
-    background-color: #39101F;
-    padding: 20px;
+    // background-color: $navWhite;
+    
+    filter: brightness(70%);
+    padding: 30px;
     padding-bottom: 10px;
-    border-radius:48% 52% 70% 30% / 99% 62% 38% 1%  ;
+    // border-radius:48% 52% 70% 30% / 99% 62% 38% 1%  ;
 
-    p{
-        color:$navWhite;
+    p,a{
+        color:white;
     }
-    a{
-        color: $navWhite;
-    }
-
+ 
     @media(min-width:550px){
-        display: block;
+        display: inline;
         float: right;
 
         ul,p{
             display:flex;
-            justify-content: space-between;
+            justify-content: space-around;
             width: 300px;
-        }
-
-        .footer-name{
-           font-family:'Raleway', sans-serif
         }
       
     }
