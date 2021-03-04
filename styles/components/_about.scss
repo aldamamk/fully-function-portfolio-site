@@ -1,38 +1,17 @@
 .about-content{
-    min-height: 100vh;
-    padding: 20px;
+    min-height: 90vh;
+    padding: 0 20px;
     margin-bottom: 60px;
 
     @media(min-width: 600px){
     max-width: 900px;
-    margin:50px auto;
+    margin:0 auto;
     text-align: left;
-
     }
 
-    .linkedin{
-        color: $red;
-    }
 
     strong{
         font-weight: bold;
-    }
-
-    .about-flex{ 
-
-        .right-grid{
-        grid-area: right;
-        }
-
-        .left-grid{
-            grid-area: left;
-        }
-
-        @media(min-width: 600px){
-        display: grid;
-        grid-template-areas: 'left right';
-        grid-gap: 10px;
-        }
     }
 
     p{
@@ -46,11 +25,9 @@
     }
 
     h1{
-        text-align: left;
-    }
-
-    .last-p{
-        margin-bottom: 30px;
+        @media(min-width: 700px){      
+            text-align: left;
+        }
     }
 
     .my-im{
@@ -58,7 +35,6 @@
         object-fit:cover;
         width:200px ;
         height:200px;
-        float: inline-start;
 
         @media(min-width: 600px){
             border-radius: 3px;
@@ -66,6 +42,8 @@
             width: auto;
             object-fit: fill;
             margin-left: 20px;
+            float: right;
+
 
         }        
     }

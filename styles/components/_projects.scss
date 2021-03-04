@@ -1,10 +1,6 @@
 .project-container{
     min-height: 80vh;
-    h1{
-        font-size: 2.5em;
-        margin: 10vh auto;
-        color: $whiteFillProjects;
-    }
+    padding-bottom: 50px;
 
     .flex-content{
         @media(min-width: 565px){
@@ -13,7 +9,6 @@
     }
 
     h2{
-        color: $whiteText;
         font-size: 2em;
         position: relative;
         top: 136px;
@@ -37,11 +32,10 @@
         background-color: $blackButton;
         object-fit: contain;
         margin: 50px 10px;
-        background-blend-mode: multiply;  
         border-radius: 3px;
         border-top: $yellowText 2px solid;
         border-bottom: $yellowText 2px solid;
-        transition: 1s;
+        transition: 3s;
       
         @media (min-width: 565px){
             width: 40vw;
@@ -59,7 +53,6 @@
     } 
 
     .p-box:hover{
-
         .a-buttonlike{
             display: block;
             letter-spacing: 3px;

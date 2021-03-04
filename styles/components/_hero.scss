@@ -30,12 +30,12 @@
     }
 
     .hero-content{
-    text-align: left  ;
-    padding-top: 15vh;
+    text-align: left;
+    padding-top: 10vh;
     margin: 0 5vw;
     
       @media(min-width:500px){
-        padding-top: 15vh;
+        padding-top: 5vh;
         max-width: 90vw;
         margin: 0 auto;
       }

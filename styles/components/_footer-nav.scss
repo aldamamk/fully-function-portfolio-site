@@ -3,15 +3,9 @@ footer{
 }
 .footer-content{
     display: none;
-    // background-color: $navWhite;
-    
-    filter: brightness(70%);
-    padding: 30px;
-    padding-bottom: 10px;
-    // border-radius:48% 52% 70% 30% / 99% 62% 38% 1%  ;
-
     p,a{
-        color:white;
+        color:$navWhite;
+        font-size: .90em;
     }
  
     @media(min-width:550px){

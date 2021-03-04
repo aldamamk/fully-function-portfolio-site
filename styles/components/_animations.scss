@@ -22,17 +22,3 @@
     border: 1px $brownText solid;
   
   }
-
-  //========== particle projects page bg styling
-
-  canvas {
-    display: block;
-  }
-  
-  #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: $backGround;
-    z-index:-1;
-  }
