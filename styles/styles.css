@@ -153,6 +153,17 @@ h1 {
   height: 28px;
 }
 
+main {
+  margin: 0  20px;
+}
+
+@media (min-width: 1000px) {
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
 @-webkit-keyframes anchor-underline {
   0%, 10% {
     left: 0;
@@ -701,7 +712,7 @@ h1 {
 
 @media (min-width: 600px) {
   .above-fold-content p {
-    max-width: 70%;
+    max-width: 80%;
     margin: 40px auto;
   }
 }
@@ -791,7 +802,8 @@ h1 {
 
 .capstone-project .above-fold-content p {
   padding: 5px;
-  margin-bottom: 0;
+  margin: 0 auto;
+  font-weight: 400;
 }
 
 .capstone-project .above-fold-content img {
